@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Matrix</title>
+</head>
+
+<body>
+    <div class="contact-us">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 134" width="0" height="0"
+                preserveAspectRatio="xMidYMid meet"
+                style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px)">
+                <defs>
+                    <clipPath id="__lottie_element_194">
+                        <rect width="102" height="134" x="0" y="0"></rect>
+                    </clipPath>
+                    <clipPath id="__lottie_element_196">
+                        <path d="M0,0 L102,0 L102,134 L0,134z"></path>
+                    </clipPath>
+                </defs>
+                <g clip-path="url(#__lottie_element_194)">
+                    <g fill="rgb(0,174,239)" font-size="20" font-family="Montserrat" font-style="normal"
+                        font-weight="normal" aria-label="Contact Us"
+                        transform="matrix(0,-1,1,0,88.02899932861328,122.41500091552734)" opacity="1"
+                        style="display: block; fill: rgb(0, 174, 239)">
+                        <path stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4"
+                            d=" M11.76,-9.61 C11.76,-9.61 13.62,-11.86 13.62,-11.86 C12.23,-13.29 10.09,-14.2 8.06,-14.2 C3.79,-14.2 0.54,-11.14 0.54,-7.07 C0.54,-2.98 3.73,0.14 7.94,0.14 C9.99,0.14 12.15,-0.85 13.64,-2.38 C13.64,-2.38 11.76,-4.41 11.76,-4.41 C10.76,-3.4 9.37,-2.76 8.1,-2.76 C5.68,-2.76 3.81,-4.65 3.81,-7.11 C3.81,-9.57 5.68,-11.44 8.1,-11.44 C9.41,-11.44 10.8,-10.72 11.76,-9.61z M20.08,-10.94 C16.6,-10.94 14.26,-8.74 14.26,-5.42 C14.26,-2.11 16.6,0.12 20.08,0.12 C23.55,0.12 25.89,-2.11 25.89,-5.42 C25.89,-8.74 23.55,-10.94 20.08,-10.94z M20.08,-8.36 C21.68,-8.36 22.78,-7.15 22.78,-5.38 C22.78,-3.61 21.68,-2.4 20.08,-2.4 C18.47,-2.4 17.39,-3.61 17.39,-5.38 C17.39,-7.15 18.47,-8.36 20.08,-8.36z M34.8,-10.96 C33.11,-10.94 31.82,-10.29 31.05,-8.94 C31.05,-8.94 31.05,-10.84 31.05,-10.84 C31.05,-10.84 27.95,-10.84 27.95,-10.84 C27.95,-10.84 27.95,0 27.95,0 C27.95,0 31.05,0 31.05,0 C31.05,0 31.05,-5.34 31.05,-5.34 C31.05,-6.93 31.98,-8.1 33.53,-8.12 C34.86,-8.12 35.66,-7.27 35.66,-5.9 C35.66,-5.9 35.66,0 35.66,0 C35.66,0 38.77,0 38.77,0 C38.77,0 38.77,-6.81 38.77,-6.81 C38.77,-9.35 37.22,-10.96 34.8,-10.96z M47.51,-2.88 C46.95,-2.62 46.47,-2.48 46.06,-2.48 C45.4,-2.46 45.02,-2.82 45.02,-3.73 C45.02,-3.73 45.02,-8.2 45.02,-8.2 C45.02,-8.2 47.96,-8.2 47.96,-8.2 C47.96,-8.2 47.96,-10.35 47.96,-10.35 C47.96,-10.35 45.02,-10.35 45.02,-10.35 C45.02,-10.35 45.02,-13.33 45.02,-13.33 C45.02,-13.33 41.93,-13.33 41.93,-13.33 C41.93,-13.33 41.93,-10.35 41.93,-10.35 C41.93,-10.35 40.42,-10.35 40.42,-10.35 C40.42,-10.35 40.42,-8.22 40.42,-8.22 C40.42,-8.22 41.93,-8.22 41.93,-8.22 C41.93,-8.22 41.93,-3.2 41.93,-3.2 C41.93,-0.97 43.4,0.14 45.34,0.14 C46.34,0.14 47.35,-0.14 48.16,-0.6 C48.16,-0.6 47.51,-2.88 47.51,-2.88z M59.4,0 C59.4,0 59.38,-7.07 59.38,-7.07 C59.36,-9.51 57.68,-10.96 54.78,-10.96 C52.89,-10.96 51.5,-10.51 49.89,-9.71 C49.89,-9.71 50.86,-7.57 50.86,-7.57 C51.98,-8.2 53.11,-8.52 54.08,-8.52 C55.57,-8.52 56.33,-7.86 56.33,-6.71 C56.33,-6.71 56.33,-6.51 56.33,-6.51 C56.33,-6.51 53.35,-6.51 53.35,-6.51 C50.7,-6.49 49.22,-5.28 49.22,-3.24 C49.22,-1.27 50.63,0.14 52.95,0.14 C54.46,0.14 55.63,-0.36 56.35,-1.27 C56.35,-1.27 56.35,0 56.35,0 C56.35,0 59.4,0 59.4,0z M53.82,-2.07 C52.77,-2.07 52.13,-2.62 52.13,-3.44 C52.13,-4.31 52.71,-4.67 53.9,-4.67 C53.9,-4.67 56.33,-4.67 56.33,-4.67 C56.33,-4.67 56.33,-3.71 56.33,-3.71 C56.15,-2.78 55.13,-2.07 53.82,-2.07z M69.32,-7.15 C69.32,-7.15 71.42,-8.66 71.42,-8.66 C70.45,-10.11 68.8,-10.94 66.72,-10.94 C63.4,-10.94 61.16,-8.7 61.16,-5.38 C61.16,-2.09 63.4,0.12 66.68,0.12 C68.9,0.12 70.59,-0.77 71.5,-2.28 C71.5,-2.28 69.36,-3.73 69.36,-3.73 C68.82,-2.88 67.95,-2.46 66.84,-2.46 C65.33,-2.46 64.27,-3.65 64.27,-5.4 C64.27,-7.13 65.33,-8.3 66.84,-8.3 C67.91,-8.32 68.74,-7.88 69.32,-7.15z M79.15,-2.88 C78.59,-2.62 78.11,-2.48 77.7,-2.48 C77.04,-2.46 76.66,-2.82 76.66,-3.73 C76.66,-3.73 76.66,-8.2 76.66,-8.2 C76.66,-8.2 79.6,-8.2 79.6,-8.2 C79.6,-8.2 79.6,-10.35 79.6,-10.35 C79.6,-10.35 76.66,-10.35 76.66,-10.35 C76.66,-10.35 76.66,-13.33 76.66,-13.33 C76.66,-13.33 73.57,-13.33 73.57,-13.33 C73.57,-13.33 73.57,-10.35 73.57,-10.35 C73.57,-10.35 72.06,-10.35 72.06,-10.35 C72.06,-10.35 72.06,-8.22 72.06,-8.22 C72.06,-8.22 73.57,-8.22 73.57,-8.22 C73.57,-8.22 73.57,-3.2 73.57,-3.2 C73.57,-0.97 75.04,0.14 76.98,0.14 C77.98,0.14 78.99,-0.14 79.8,-0.6 C79.8,-0.6 79.15,-2.88 79.15,-2.88z M89.61,-5.9 C89.61,-5.9 89.61,-14.1 89.61,-14.1 C89.61,-14.1 86.43,-14.1 86.43,-14.1 C86.43,-14.1 86.43,-5.9 86.43,-5.9 C86.43,-2.18 88.93,0.14 92.83,0.14 C96.72,0.14 99.16,-2.18 99.16,-5.9 C99.16,-5.9 99.16,-14.1 99.16,-14.1 C99.16,-14.1 95.98,-14.1 95.98,-14.1 C95.98,-14.1 95.98,-5.9 95.98,-5.9 C95.98,-3.87 94.73,-2.64 92.83,-2.64 C90.94,-2.64 89.61,-3.87 89.61,-5.9z M108.76,-7.65 C108.76,-7.65 109.83,-9.77 109.83,-9.77 C108.62,-10.53 107.09,-10.98 105.6,-10.98 C103.24,-10.98 101.33,-9.83 101.33,-7.59 C101.33,-3.79 106.95,-4.71 106.95,-2.98 C106.95,-2.4 106.36,-2.14 105.58,-2.14 C104.39,-2.14 102.94,-2.62 101.81,-3.48 C101.81,-3.48 100.8,-1.39 100.8,-1.39 C102.03,-0.4 103.74,0.12 105.5,0.12 C107.95,0.12 109.91,-1.05 109.91,-3.26 C109.93,-7.09 104.21,-6.26 104.21,-7.9 C104.21,-8.46 104.73,-8.7 105.46,-8.7 C106.36,-8.7 107.57,-8.32 108.76,-7.65z"
+                            style="display: inherit"></path>
+                    </g>
+                    <g transform="matrix(1,0,0,1,65.66985321044922,67)" opacity="1" style="display: block">
+                        <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                            <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                stroke="rgb(0,174,239)" stroke-opacity="1" stroke-width="5"
+                                d=" M-30.4689998626709,-16.9689998626709 C-30.4689998626709,-16.9689998626709 -17.9060001373291,-3.625 -17.9060001373291,-3.625 C-17.9060001373291,-3.625 -30.2810001373291,9.562999725341797 -30.2810001373291,9.562999725341797"
+                                style="stroke: rgb(0, 174, 239)"></path>
+                        </g>
+                    </g>
+                    <g clip-path="url(#__lottie_element_196)" transform="matrix(1,0,0,1,-10.955146789550781,0)"
+                        opacity="1" style="display: block">
+                        <g style="display: none" transform="matrix(1,0,0,1,76.62468719482422,67)"
+                            opacity="0.000017557568675670154">
+                            <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                    stroke="rgb(0,174,239)" stroke-opacity="1" stroke-width="5"
+                                    d=" M-30.4689998626709,-16.9689998626709 C-30.4689998626709,-16.9689998626709 -17.9060001373291,-3.625 -17.9060001373291,-3.625 C-17.9060001373291,-3.625 -30.2810001373291,9.562999725341797 -30.2810001373291,9.562999725341797"
+                                    style="stroke: rgb(0, 174, 239)"></path>
+                            </g>
+                        </g>
+                        <g transform="matrix(1,0,0,1,76.62454986572266,67)" opacity="0.000025285526060656593"
+                            style="display: none">
+                            <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0"
+                                    stroke="rgb(0,174,239)" stroke-opacity="1" stroke-width="5"
+                                    d=" M-30.4689998626709,-16.9689998626709 C-30.4689998626709,-16.9689998626709 -17.9060001373291,-3.625 -17.9060001373291,-3.625 C-17.9060001373291,-3.625 -30.2810001373291,9.562999725341797 -30.2810001373291,9.562999725341797"
+                                    style="stroke: rgb(0, 174, 239)"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </a>
+    </div>
+    <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    <header class="header fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex align-items-center justify-content-between">
+                    <div class="logo">
+                        <a href="#"> <img src="images/logo-m.png" alt="logo" /></a>
+                    </div>
+                    <div class="menu-button-wrapper">
+                        <div class="menu-button">
+                            <span class="menu-button-bar"></span>
+                            <span class="menu-button-bar"></span>
+                            <span class="menu-button-bar"></span>
+                            <span class="menu-button-bar"></span>
+                        </div>
+                    </div>
+                    <div class="menu-overlay">
+                        <nav class="nav">
+                            <h2 class="menu-title">Home</h2>
+                            <h2 class="menu-title">Product And Services</h2>
+                            <ul>
+                                <li class="main">
+                                    <a class="nav_item" href="#">- COMPLETE SPORTSBOOK</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a class="nav_item" href="#">Complete Coverage</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a class="nav_item" href="#">Multi-Tenant Platform</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a class="nav_item" href="#">Custom Odds And Risk</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a class="nav_item" href="#">Product Localisation</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a class="nav_item" href="#">Tailored User Interface</a>
+                                </li>
+                                <li class="main">
+                                    <a class="nav_item" href="#">- STANDALONE PRODUCTS</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a class="nav_item" href="#">Soccer</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a class="nav_item" href="#">Racing</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a class="nav_item" href="#">Us Sports</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a class="nav_item" href="#">Golf</a>
+                                </li>
+                                <li class="main">
+                                    <a class="nav_item text-white" href="#">ABOUT US</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a class="nav_item" href="#">Media</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a class="nav_item" href="#">Supported Brands</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a class="nav_item" href="#">Careers</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a class="nav_item" href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 col-md-6">
+                    <div class="video-wrap">
+                        <video id="introVideo" autoplay>
+                            <source src="video/home-intro.mp4" type="video/mp4" width="auto" />
+                        </video>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="hero-content" id="Hero-Content">
+                        <h1>
+                            <span class="blue-color">MULTI-TENANT</span><br />
+                            SPORTS BETTING<br />
+                            SOFTWARE PROVIDER
+                        </h1>
+                        <hr class="m-0" />
+                        <p>New to Metric Gaming?</p>
+                        <p>
+                            Our short video explains how we're
+                            <span class="blue-color"> better </span>
+                        </p>
+                        <a href="#" class="video-btn">
+                            <span class="play-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="24" height="24"
+                                    preserveAspectRatio="xMidYMid meet"
+                                    style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);">
+                                    <defs>
+                                        <clipPath id="__lottie_element_182">
+                                            <rect width="1080" height="1080" x="0" y="0"></rect>
+                                        </clipPath>
+                                        <clipPath id="__lottie_element_184">
+                                            <path d="M0,0 L1080,0 L1080,1080 L0,1080z"></path>
+                                        </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#__lottie_element_182)">
+                                        <g clip-path="url(#__lottie_element_184)" transform="matrix(1,0,0,1,0,0)"
+                                            opacity="1" style="display: block;">
+                                            <g transform="matrix(0.33000001311302185,0,0,0.33000001311302185,540,540)"
+                                                opacity="1" style="display: block;">
+                                                <g opacity="1" transform="matrix(3,0,0,3,0,0)">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        fill-opacity="0" stroke="rgb(12,40,224)" stroke-opacity="1"
+                                                        stroke-width="50"
+                                                        d=" M0,440 C243.00999450683594,440 440,243.00999450683594 440,0 C440,-243.00999450683594 243.00999450683594,-440 0,-440 C-243,-440 -440,-243.00999450683594 -440,0 C-440,243.00999450683594 -243,440 0,440z">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                            <g transform="matrix(0.30000001192092896,0,0,0.30000001192092896,585.19384765625,539.6290283203125)"
+                                                opacity="1" style="display: block;">
+                                                <g opacity="1" transform="matrix(3,0,0,3,0,0)">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        fill-opacity="0" stroke="rgb(12,40,224)" stroke-opacity="1"
+                                                        stroke-width="50"
+                                                        d=" M-125.86799621582031,-194.7740020751953 C-63.19900131225586,-149.48300170898438 143.6490020751953,0.004999999888241291 143.6490020751953,0.004999999888241291 C143.6490020751953,0.004999999888241291 -143.64999389648438,207.625 -143.64999389648438,207.625 C-143.64999389648438,207.625 -143.64999389648438,207.625 -143.64999389648438,207.625 C-143.64999389648438,207.625 -143.64999389648438,-207.625 -143.64999389648438,-207.625 C-143.64999389648438,-207.625 -137.0570068359375,-202.86000061035156 -125.86799621582031,-194.7740020751953">
+                                                    </path>
+                                                    <path fill="rgb(11,40,223)" fill-opacity="1"
+                                                        d=" M-125.86799621582031,-194.7740020751953 C-63.19900131225586,-149.48300170898438 143.6490020751953,0.004999999888241291 143.6490020751953,0.004999999888241291 C143.6490020751953,0.004999999888241291 -143.64999389648438,207.625 -143.64999389648438,207.625 C-143.64999389648438,207.625 -143.64999389648438,207.625 -143.64999389648438,207.625 C-143.64999389648438,207.625 -143.64999389648438,-207.625 -143.64999389648438,-207.625 C-143.64999389648438,-207.625 -137.0570068359375,-202.86000061035156 -125.86799621582031,-194.7740020751953">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </span>
+                            <span>
+                                Watch Video
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container-fluid p-0">
+            <div class="row m-0">
+                <!-- <div class="scrolling-title">
+                    <h2 style="font-size: 80px">Product & Services</h2>
+                </div> -->
+                <div class="left-side">
+                    <p data-aos="fade-right" data-aos-delay="400">A MARKET BEATING</p>
+                    <h3 data-aos="fade-right" data-aos-delay="500">SPORTSBOOK</h3>
+                    <p class="mb-0" data-aos="fade-right" data-aos-delay="600">PLATFORM & SERVICE</p>
+                    <hr data-aos="fade-up" data-aos-delay="700" />
+                    <h4 data-aos="fade-right" data-aos-delay="800">
+                        A purpose-built B2B <br />
+                        sportsbook platform providing:
+                    </h4>
+                    <div class="inner-content">
+                        <div class="left-text">
+                            <h6 data-aos="fade-right" data-aos-delay="900">Complete Coverage</h6>
+                            <h6 data-aos="fade-right" data-aos-delay="1000">Custom Odds & Risk</h6>
+                            <h6 data-aos="fade-right" data-aos-delay="1100">In-Play Innovations</h6>
+                        </div>
+                        <div class="img-wrap" data-aos="fade-up" data-aos-delay="1000">
+                            <img src="images/metric-logo-p.png" alt="image" class="up-down-animation" />
+                        </div>
+                        <div class="right-text">
+                            <h6 data-aos="fade-left" data-aos-delay="900">Multi-Tenant Capabilities</h6>
+                            <h6 data-aos="fade-left" data-aos-delay="1000">Product Localisation</h6>
+                            <h6 data-aos="fade-left" data-aos-delay="1100">Tailored User Interfaces</h6>
+                        </div>
+                    </div>
+                    <a data-aos="fade-up" data-aos-delay="1200" href="#" class="btn-cta"> <img
+                            src="images/arrow-down.svg" alt="arrow" class="arrow" /> GO TO SPORTSBOOK</a>
+                </div>
+                <div class="right-side">
+                    <p data-aos="fade-left" data-aos-delay="400">OUR MARKET LEADING</p>
+                    <h3 data-aos="fade-left" data-aos-delay="500">SPORTS PRODUCTS</h3>
+                    <p class="mb-0" data-aos="fade-left" data-aos-delay="600">AS FEEDS OR SERVICES</p>
+                    <hr data-aos="fade-up" data-aos-delay="700" />
+                    <h4 data-aos="fade-up" data-aos-delay="800">
+                        Upgrade any sportsbook <br />
+                        with these 7 services:
+                    </h4>
+                    <div class="image-content">
+                        <div class="service-content">
+                            <div class="d-flex align-items-center justify-content-center" data-aos="fade-up"
+                                data-aos-delay="900">
+                                <img src="images/soccericon.png" alt="image" class="up-down-animation-1" />
+                                <span>Soccer</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center" data-aos="fade-up"
+                                data-aos-delay="1100">
+                                <img src="images/racingicon.png" alt="image" class="up-down-animation-2" />
+                                <span>Racing</span>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <div class="d-flex align-items-center justify-content-center" data-aos="fade-up"
+                                data-aos-delay="1000">
+                                <img src="images/usicon.png" alt="image" class="up-down-animation-3" />
+                                <span>4 US Sports</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center" data-aos="fade-up"
+                                data-aos-delay="1200">
+                                <img src="images/golficon.png" alt="image" class="up-down-animation-4" />
+                                <span>Golf</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a data-aos="fade-up" data-aos-delay="1200" href="#" class="btn-cta"><img
+                            src="images/arrow-down.svg" alt="arrow" class="arrow" />GO TO SPORTS</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="down-gif my-3">
+                        <img src="images/down-arrow.gif" alt="arrow down" height="40" width="35" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sportsbook">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-xl-8">
+                    <div class="title text-center" data-aos="fade-up" data-aos-delay="200">
+                        <h2>METRIC'S <span class="blue-color">COMPLETE</span> SPORTSBOOK</h2>
+                        <p>All the events and markets you want, supplied as you need</p>
+                    </div>
+                    <div class="sportbook-content text-center position-relative" data-aos="fade-up"
+                        data-aos-delay="400">
+                        <div class="d-flex justify-content-around">
+                            <div>
+                                <div class="vertical-box">
+                                    <p class="mb-0">
+                                        50+
+                                    </p>
+                                    <p class="mb-0">
+                                        7 In-House
+                                    </p>
+                                </div>
+
+                                <div class="vbox-name">
+                                    <p class="mb-0">
+                                        Sports
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="vertical-box">
+                                    <p class="mb-0">
+                                        4,00,000+ Annually
+                                    </p>
+                                    <p class="mb-0">
+                                        2,60,000+ In-Pay
+                                    </p>
+                                </div>
+                                <div class="vbox-name">
+                                    <p class="mb-0">
+                                        Sports
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="vertical-box">
+                                    <p class="mb-0">
+                                        2000 Bets Per Second
+                                    </p>
+                                    <p class="mb-0">
+                                        Horizontally Scallable
+                                    </p>
+                                </div>
+                                <div class="vbox-name">
+                                    <p class="mb-0">
+                                        Performance
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="down-gif my-3">
+                        <img src="images/down-arrow.gif" alt="arrow down" height="40" width="35" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="multi-tenant-platform">
+        <div class="container">
+            <div class="row w-90 mx-auto">
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <div class="tenant-text">
+                        <h3 class="showText textAnimate-1 show">
+                            BENEFITS OF A <br />
+                            <span class="blue-color"> MULTI-TENANT </span>
+                            PLATFORM
+                        </h3>
+                        <h3 class="showText textAnimate-2">
+                            ALL TENANTS<br />
+                            ARE
+                            <span class="blue-color"> INDEPENDENT</span>
+                        </h3>
+                        <h3 class="showText textAnimate-3">
+                            SO THEY ALL LOOK AND<br />
+                            BEHAVE
+                            <span class="blue-color"> DIFFERENTLY </span><br />
+                            TO THE REST
+                        </h3>
+                        <h3 class="showText textAnimate-4">
+                            EVEN THOUGH<br />
+                            THEY ARE ALL HOUSED<br />
+                            IN THE
+                            <span class="blue-color"> SAME PLACE </span>
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <div class="video-content">
+                        <video id="introVideo" autoplay>
+                            <source src="video/platform.webm" type="video/webm" />
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="down-gif my-3">
+                        <img src="images/down-arrow.gif" alt="arrow down" height="40" width="35" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="custom-risks">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <div class="risk-content">
+                        <h3 id="change-text" class="codText codAnimate-1">
+                            OUR UNIQUE
+                            <span class="blue-color"> MULTI-TENANT </span><br />
+                            CAPABILITIES ALLOW<br />
+                            <span class="blue-color fs-26">CUSTOM ODDS &amp; RISK</span><br />
+                            SET UPS FOR EACH TENANT
+                        </h3>
+                        <h3 id="change-text" class="codText codAnimate-2">
+                            BY CONFIGURING <br />
+                            OVER <span class="blue-color"> 20 CUSTOM</span><br />
+                            PARAMETERS
+                        </h3>
+                        <h3 id="change-text" class="codText codAnimate-3">
+                            WE IMPLEMENT <br />
+                            <span class="blue-color">
+                                THE RIGHT STRATEGY</span><br />
+                            FOR EACH TENANT<br /><br />
+                            THAT’S ACROSS<br /><span class="blue-color"> EVERY </span>
+                            SPORT<br />
+                            <span class="blue-color"> EVERY</span>
+                            MARKET<br />
+                            <span class="blue-color"> EVERY </span>
+                            SELECTION
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <div class="video-container">
+                        <video id="introVideo" autoplay>
+                            <source src="video/odds-risks.webm" />
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-localisation">
+        <div class="container">
+            <div class="row w-80">
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <div class="video-container">
+                        <video id="introVideo" autoplay>
+                            <source src="video/localisation.webm" type="video/webm" />
+                        </video>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <div class="localisation-text">
+                        <h3 class="blue-color">AUTOMATE LOCALISATION</h3>
+                        <h3>
+                            BY PAIRING THESE CAPABILITIES<br />WITH OUR
+                            <span class="blue-color">ADVANCED CMS ENGINE</span>
+                        </h3>
+                        <h3> TO EFFECTIVELY <br /><span class="blue-color">AUTOMATE CONTENT CURATION</span>
+                            <br />ACROSS TERRITORIES
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="down-gif my-3">
+                        <img src="images/down-arrow.gif" alt="arrow down" height="40" width="35" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="user-interface">
+        <div class="container">
+            <div class="row w-80">
+                <div class="col-12 col-md-4">
+                    <div class="interface-text">
+                        <img src="images/customised-icon.png" data-aos="fade-right" data-aos-delay="400" class="head">
+                        <h2 data-aos="fade-right" data-aos-delay="600" class="blue-color"> CUSTOMISED
+                        </h2>
+                        <h2 class="mb-0" data-aos="fade-right" data-aos-delay="800">USER INTERFACE</h2>
+                        <hr data-aos="fade-right" data-aos-delay="900">
+                        <p data-aos="fade-right" data-aos-delay="1000">
+                            <span class="blue-color">Tailor-made,</span> to your specifications
+                        </p>
+                        <a href="#" data-aos="fade-right" data-aos-delay="1200" class="btn-learnmore"> <img
+                                src="images/learn_icon.png" alt="icon" width="20" /> Learn
+                            More</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <div class="gaming-img up-down-animation">
+                        <img src="images/mannequin.png" alt="image">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 text-end">
+                    <div class="templated-text">
+                        <img src="images/templated-icon-rev.png" data-aos="fade-left" data-aos-delay="400" class="head">
+                        <h2 data-aos="fade-left" data-aos-delay="600" class="blue-color"> TEMPLATED </h2>
+                        <h2 class="mb-0" data-aos="fade-left" data-aos-delay="800">USER INTERFACE</h2>
+                        <hr data-aos="fade-left" data-aos-delay="900">
+                        <p data-aos="fade-left" data-aos-delay="1000"><span class="blue-color">Made-to-measure,</span>
+                            modifiable solution </p>
+                        <a href="#" data-aos="fade-left" data-aos-delay="1200" class="btn-learnmore"> <img
+                                src="images/learn_icon.png" alt="icon" width="20" />
+                            Learn More
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+    <section class="customised-ui">
+        <div class="container">
+            <div class="row w-80">
+                <div class="col-md-6">
+                    <img src="images/customised-icon.png" data-aos="fade-right" data-aos-delay="400" class="head">
+                    <h2 data-aos="fade-right" data-aos-delay="600"> USE OUR
+                        <span class="blue-color">POWERFUL
+                            APIs</span><br> TO BUILD OR INTEGRATE A<br>
+                        <span class="blue-color">FULLY CUSTOM
+                            INTERFACE</span>
+                    </h2>
+                    <h4 data-aos="fade-right" data-aos-delay="800"> BUDGET &amp; IMAGINATION ARE<br> THE ONLY
+                        RESTRICTIONS </h4>
+                </div>
+                <div class="col-md-6">
+                    <div class="video-container">
+                        <video id="introVideo" autoplay>
+                            <source src="video/customui.webm" type="video/webm" />
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="template-ui">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/templated-icon.png" alt="image" data-aos="fade-right" data-aos-delay="400"
+                        class="lozad icon" height="80">
+                    <h3 data-aos="fade-right" data-aos-delay="600"> OUR INTERFACE IS SPLIT<br>INTO <span
+                            class="blue-color">MODIFIABLE SECTIONS</span>
+                    </h3>
+                    <h3 data-aos="fade-right" data-aos-delay="800">
+                        <span class="blue-color">MADE-TO-MEASURE</span>TO YOUR REQUIREMENTS
+                        <h3 data-aos="fade-right" data-aos-delay="1000"> FOR A HIGH-QUALITY &amp;<br><span
+                                class="blue-color">QUICK ROUTE TO MARKET</span>
+                        </h3>
+                </div>
+                <div class="col-md-6">
+                    <div class="video-container">
+                        <video autoplay>
+                            <source src="video/templatedui.webm" type="video/webm" />
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="inhouse-slider">
+        <div class="swiper-content" style="height: 100vh; width: 100vw;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="inhouse-products">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-md-5">
+                                    <div class="video-container">
+                                        <video autoplay loop id="introVideo">
+                                            <source src="video/in-house.webm" type="video/webm" />
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 offset-1">
+                                    <div class="products-content">
+                                        <h3 data-aos="fade-left" data-aos-delay="400"> WE ONLY BUILD PRODUCTS IF
+                                            WE<br> CAN <span class="blue-color">BETTER</span> WHAT'S
+                                            AVAILABLE </h3>
+                                        <h3 data-aos="fade-left" data-aos-delay="600"> ALL PRODUCTS ARE OFFERED AS
+                                            <br>
+                                            <span class="blue-color">PRICE FEEDS</span><br>OR<br>
+                                            <span class="blue-color">FULLY MANAGED SERVICES</span>
+                                        </h3>
+                                        <h3 data-aos="fade-left" data-aos-delay="800"> SUPPLIED VIA APIs OR iFRAME
+                                        </h3>
+                                        <div data-aos="fade-left" data-aos-delay="1000" class="move-right">
+                                            <h3> SWIPE RIGHT TO FIND OUT ABOUT OUR IN-HOUSE PRODUCTS </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="soccer-product">
+                        <div class="container">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6">
+                                    <!-- <div class="video-container">
+                                        <video autoplay loop id="introVideo">
+                                            <source src="video/in-house.webm" type="video/webm" />
+                                        </video>
+                                    </div> -->
+                                    <h3 data-aos="fade-right" data-aos-delay="400" style="white-space: nowrap;"> THE
+                                        TIKI-TAKA OF </h3>
+                                    <h2 data-aos="fade-right" data-aos-delay="600">SOCCER</h2>
+                                    <h3 data-aos="fade-right" data-aos-delay="800">PRODUCTS</h3>
+                                    <p data-aos="fade-right" data-aos-delay="1000"> We've used
+                                        technical superiority and fluidity to create an elegant, all-conquering
+                                        Soccer system. </p>
+                                </div>
+                                <div class="col-md-6 d-flex justify-content-end">
+                                    <div class="soccer">
+
+                                        <!-- <h3 data-aos="fade-left" data-aos-delay="400"> WE ONLY BUILD PRODUCTS IF
+                                            WE<br> CAN <span class="blue-color">BETTER</span> WHAT'S
+                                            AVAILABLE </h3>
+                                        <h3 data-aos="fade-left" data-aos-delay="600"> ALL PRODUCTS ARE OFFERED AS
+                                            <br>
+                                            <span class="blue-color">PRICE FEEDS</span><br>OR<br>
+                                            <span class="blue-color">FULLY MANAGED SERVICES</span>
+                                        </h3>
+                                        <h3 data-aos="fade-left" data-aos-delay="800"> SUPPLIED VIA APIs OR iFRAME
+                                        </h3>
+                                        <div data-aos="fade-left" data-aos-delay="1000" class="move-right">
+                                            <h3> SWIPE RIGHT TO FIND OUT ABOUT OUR IN-HOUSE PRODUCTS </h3>
+                                        </div> -->
+                                        <ul>
+                                            <li data-aos="fade-left" data-aos-delay="400">
+                                                <span class="bullet-icon"></span>
+                                                97%+ IN-PLAY MARKET
+                                                UPTIME
+                                            </li>
+                                            <li data-aos="fade-left" data-aos-delay="600">
+                                                <span class="bullet-icon">
+                                                </span>IN-PLAY CREATE-A-BET
+                                            </li>
+                                            <li data-aos="fade-left" data-aos-delay="800">
+                                                <span class="bullet-icon"></span>SUPERIOR PRICING
+                                                EFFICIENCY
+                                            </li>
+                                            <li data-aos="fade-left" data-aos-delay="1000">
+                                                <span class="bullet-icon"></span>OUTRIGHTS &amp; SPECIALS
+                                            </li>
+                                            <li data-aos="fade-left" data-aos-delay="1200">
+                                                <span class="bullet-icon"></span>ROUND-THE-CLOCK PRODUCT
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="mid-video">
+                                    <video autoplay loop id="introVideo">
+                                        <source src="video/Soccer.webm" type="video/webm" />
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="inhouse-products">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-md-5">
+                                    <div class="video-container">
+                                        <video autoplay loop id="introVideo">
+                                            <source src="video/in-house.webm" type="video/webm" />
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 offset-1">
+                                    <div class="products-content">
+                                        <h3 data-aos="fade-left" data-aos-delay="400"> WE ONLY BUILD PRODUCTS IF
+                                            WE<br> CAN <span class="blue-color">BETTER</span> WHAT'S
+                                            AVAILABLE </h3>
+                                        <h3 data-aos="fade-left" data-aos-delay="600"> ALL PRODUCTS ARE OFFERED AS
+                                            <br>
+                                            <span class="blue-color">PRICE FEEDS</span><br>OR<br>
+                                            <span class="blue-color">FULLY MANAGED SERVICES</span>
+                                        </h3>
+                                        <h3 data-aos="fade-left" data-aos-delay="800"> SUPPLIED VIA APIs OR iFRAME
+                                        </h3>
+                                        <div data-aos="fade-left" data-aos-delay="1000" class="move-right">
+                                            <h3> SWIPE RIGHT TO FIND OUT ABOUT OUR IN-HOUSE PRODUCTS </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <!-- <div class="inhouse-products">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-5">
+                        <div class="video-container">
+                            <video autoplay loop id="introVideo">
+                                <source src="video/in-house.webm" type="video/webm" />
+                            </video>
+                        </div>
+                    </div>
+                    <div class="col-md-5 offset-1">
+                        <div class="products-content">
+                            <h3 data-aos="fade-left" data-aos-delay="400"> WE ONLY BUILD PRODUCTS IF
+                                WE<br> CAN <span class="blue-color">BETTER</span> WHAT'S
+                                AVAILABLE </h3>
+                            <h3 data-aos="fade-left" data-aos-delay="600"> ALL PRODUCTS ARE OFFERED AS
+                                <br>
+                                <span class="blue-color">PRICE FEEDS</span><br>OR<br>
+                                <span class="blue-color">FULLY MANAGED SERVICES</span>
+                            </h3>
+                            <h3 data-aos="fade-left" data-aos-delay="800"> SUPPLIED VIA APIs OR iFRAME
+                            </h3>
+                            <div data-aos="fade-left" data-aos-delay="1000" class="move-right">
+                                <h3> SWIPE RIGHT TO FIND OUT ABOUT OUR IN-HOUSE PRODUCTS </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+    <section class="news-slider">
+        <div class="container">
+            <div class="row">
+                <div class="swiper-container custom">
+                    <div class="swiper news-carousel">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card" style="width: auto">
+                                    <img src="images/brand-logo-1.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and
+                                            make up the bulk of the card's content.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card" style="width: auto">
+                                    <img src="images/brand-logo-1.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and
+                                            make up the bulk of the card's content.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card" style="width: auto">
+                                    <img src="images/brand-logo-1.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and
+                                            make up the bulk of the card's content.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card" style="width: auto">
+                                    <img src="images/brand-logo-1.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and
+                                            make up the bulk of the card's content.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card" style="width: auto">
+                                    <img src="images/brand-logo-1.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and
+                                            make up the bulk of the card's content.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card" style="width: auto">
+                                    <img src="images/brand-logo-1.jpg" class="card-img-top" alt="..." />
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and
+                                            make up the bulk of the card's content.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                    </div>
+                    <!-- <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="logo-slider">
+        <div class="container">
+            <div class="row overflow-x-hidden">
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="images/brand-logo-1.jpg" alt="image" class="img-fluid" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/brand-logo-2.jpg" alt="image" class="img-fluid" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/brand-logo-1.jpg" alt="image" class="img-fluid" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/brand-logo-2.jpg" alt="image" class="img-fluid" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/brand-logo-1.jpg" alt="image" class="img-fluid" />
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+
+                    <!-- If we need navigation buttons -->
+                    <!-- <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h4>Offices</h4>
+                    <p class="address">Metric Gaming has offices in London,England and Las Vegas, USA</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-xl-3">
+                    <h4>Las Vegas</h4>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <h4>London</h4>
+                    <!-- <h1 class="animated-sentence">Sentence 1</h1> -->
+
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sportsbook</a></li>
+                        <li><a href="#">In-house Products</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Media</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <p>Follow Us on:</p>
+                </div>
+                <div class="col-12 bottom-text">
+                    <p>Metric Gaming Technologies LLC is licensed and regulated in Great Britain by the Gambling
+                        Commission under account number
+                        <a href="#"> 39552</a> <br>
+                        Metric Gaming Technologies LLC is also licensed and regulated by The Malta Gaming Authority
+                        (RN/154/2019)
+                    </p>
+                    <hr>
+                    <p class="text-center">
+                        Copyright © 2021 Metric Gaming All Rights Reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        window.onload = function () {
+            var video = document.getElementById('introVideo');
+            video.play();
+        }
+    </script>
+
+    <script>
+        //         let sentences = ["Sentence 1", "Sentence 2", "Sentence 3"];
+        // let currentSentence = 0;
+        // let animationSpeed = 2000; // milliseconds
+        // let element = document.querySelector(".animated-sentence");
+
+        // function animateSentence() {
+        //   element.innerHTML = sentences[currentSentence];
+        //   currentSentence = (currentSentence + 1) % sentences.length;
+        //   element.classList.add("animated");
+        //   setTimeout(function() {
+        //     element.classList.remove("animated");
+        //   }, animationSpeed);
+        // }
+
+        // setInterval(animateSentence, animationSpeed);
+        const textEl = document.getElementById('change-text');
+        let textIndex = 0;
+        const texts = ['Text 1', 'Text 2', 'Text 3'];
+
+        function updateText() {
+            textEl.style.opacity = 0;
+            setTimeout(() => {
+                textEl.innerHTML = texts[textIndex];
+                textEl.style.opacity = 1;
+            }, 500);
+            textIndex = (textIndex + 1) % texts.length;
+        }
+
+        setInterval(updateText, 3000);
+
+    </script>
+</body>
+
+</html>
