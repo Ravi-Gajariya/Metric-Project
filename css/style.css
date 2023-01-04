@@ -257,6 +257,7 @@ body {
     position: relative;
 }
 
+
 .hero-section .video-wrap {
     position: absolute;
     top: 50%;
@@ -511,6 +512,8 @@ showText.show {
 .vbox-name p {
     font-size: 14px;
 }
+
+
 
 /* .sportsbook-content .inner-box {
     position: absolute;
@@ -835,10 +838,10 @@ showText.show {
     text-decoration: none;
     border: none;
     font-weight: 600;
-    color: #1e2e4d;
+    color: #00aeef;
     box-shadow: none;
     border-radius: 0;
-    background: #00adf0;
+    background: #1e2e4d;
     font-size: 13px;
     padding: .75rem 2rem;
     margin-top: 24px;
@@ -976,18 +979,55 @@ showText.show {
     justify-content: center;
 }
 
-.soccer-product {
+.product-info {
     background: url('../images/products-soccer-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     /* background-position: 50%; */
-    background-position: left left;
+    /* background-position: left left; */
+    /* background-position: 0 -50%; */
     width: 100%;
     height: 100%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.product-info h3 {
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #1f345d;
+}
+
+.product-info h2 {
+    margin: 0;
+    color: #00adf0;
+    font-size: 105px;
+    line-height: 96px;
+    letter-spacing: -4px;
+    font-weight: 700;
+}
+
+.product-info h5 {
+    margin: 0;
+    color: #00adf0;
+    font-size: 75px;
+    line-height: 96px;
+    letter-spacing: -4px;
+    font-weight: 700;
+}
+
+.product-info h6 {
+    font-size: 29px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #1f345d;
+}
+
+.product-info .w-80 {
+    width: 85%;
 }
 
 .mid-video {
@@ -1003,13 +1043,14 @@ showText.show {
 }
 
 .soccer ul li {
-    color: #fff;
+    color: #00adf0;
     font-size: 22px;
     font-weight: 600;
     margin: 24px 0;
     list-style: none;
     display: flex;
     align-items: center;
+    text-transform: uppercase;
 }
 
 .bullet-icon {
@@ -1024,6 +1065,20 @@ showText.show {
 
 .mid-video video {
     width: 300px;
+}
+
+.product-info p {
+    font-size: 22px;
+    line-height: 30px;
+    margin: 16px 0 0;
+    font-weight: 600;
+    width: 70%;
+    color: #1f345d;
+}
+
+.looking-for {
+    display: block;
+    margin-top: 36px;
 }
 
 /* IN-HOUSE CSS END */
@@ -1161,6 +1216,16 @@ showText.show {
         line-height: 26px;
     }
 
+    .product-info h3 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .product-info h2 {
+        font-size: 84px;
+        line-height: 68px;
+    }
+
 }
 
 @media only screen and (max-width: 991px) {
@@ -1180,9 +1245,9 @@ showText.show {
         overflow: hidden;
     }
 
-    .contact-us {
+    /* .contact-us {
         display: none;
-    }
+    } */
 
     .hero-section .video-wrap {
         position: absolute;
@@ -1208,7 +1273,9 @@ showText.show {
         font-size: 17px;
     }
 
-    .sportbook-content {}
+    .sportbook-content {
+
+    }
 
     .services {
         height: auto;
@@ -1221,5 +1288,198 @@ showText.show {
 
     .right-side .image-content {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .down-gif {
+        display: none;
+    }
+
+    .contact-us {
+        left: -30px;
+    }
+
+    .menu-button {
+        left: 78%;
+    }
+
+    .menu-button-bar {
+        height: 1px;
+        width: 26px;
+    }
+
+    .video-wrap video {
+        width: 140%;
+    }
+
+    .hero-section .hero-content {
+        left: 12%;
+    }
+
+
+    .hero-content h1 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .hero-content p {
+        font-size: 9px;
+    }
+
+    .hero-content .video-btn {
+        height: 40px;
+    }
+
+    .services .left-side {
+        height: 72vh;
+    }
+
+    .left-side p {
+        font-size: 16px;
+    }
+
+    .left-side h3 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .left-side h4 {
+        font-size: 10px;
+        margin: 0;
+        line-height: 18px;
+    }
+
+    .inner-content h6 {
+        font-size: 9px;
+    }
+
+    .inner-content img {
+        width: 70%;
+    }
+
+    .left-side .btn-cta {
+        padding: 0.5rem 1.25rem;
+    }
+
+    .image-content .service-content {
+        width: 50%;
+    }
+
+    .services .right-side {
+        height: 80vh;
+        display: block;
+        padding-top: 1rem;
+    }
+    .right-side p {
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    .right-side h3 {
+        font-size: 20px;
+    }
+    .right-side h4 {
+        font-size: 13px;
+        margin: 0.5rem 0 1.5rem 0;
+    }
+
+    .service-content span {
+        font-size: 15px;
+    }
+
+    .service-content img {
+        height: auto;
+        width: 80px;
+    }
+    
+    .sportbook-content {
+        height: 300px;
+    }
+
+    .vertical-box {
+        height: 244px;
+        padding-top: 15px;
+    }
+
+    .vertical-box p {
+        font-size: 12px;
+    }
+
+    .vbox-name p {
+        font-size: 12px;
+    }
+
+    .multi-tenant-platform {
+        margin: 3rem 0;
+        height: 70vh;
+    }
+
+    .sportsbook {
+        height: 75vh;
+    }
+
+    .multi-tenant-platform {
+        align-items: flex-start;
+    }
+
+    .tenant-text h3 {
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
+
+    .video-content video {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .risk-content h3 {
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
+
+    .localisation-text h3 {
+        font-size: 18px;
+    }
+
+    .user-interface {
+        height: auto;
+    }
+
+    .user-interface .gaming-img {
+        margin: 2rem 0;
+    }
+
+    .gaming-img img {
+        height: 300px;
+    }
+
+    .right-side .btn-cta {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .services .left-side {
+        height: 80vh;
+    }
+
+    .service-content img {
+        width: 40px;
+    }
+
+    .image-content .service-content > div {
+        display: flex;
+        justify-content: flex-start !important;
+        margin: 0.5rem 0;
+    }
+
+    .service-content span {
+        font-size: 12px;
+    }
+
+    .services .right-side {
+        height: 60vh;
     }
 }

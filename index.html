@@ -25,14 +25,14 @@
                 preserveAspectRatio="xMidYMid meet"
                 style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px)">
                 <defs>
-                    <clipPath id="__lottie_element_194">
+                    <clipPath id="SVG-ICON">
                         <rect width="102" height="134" x="0" y="0"></rect>
                     </clipPath>
-                    <clipPath id="__lottie_element_196">
+                    <clipPath id="SVG-ICON">
                         <path d="M0,0 L102,0 L102,134 L0,134z"></path>
                     </clipPath>
                 </defs>
-                <g clip-path="url(#__lottie_element_194)">
+                <g clip-path="url(#SVG-ICON)">
                     <g fill="rgb(0,174,239)" font-size="20" font-family="Montserrat" font-style="normal"
                         font-weight="normal" aria-label="Contact Us"
                         transform="matrix(0,-1,1,0,88.02899932861328,122.41500091552734)" opacity="1"
@@ -91,7 +91,8 @@
           </div>
         </div>
       </div> -->
-    <header class="header fixed-top">
+    <header class="header">
+        <div class="fixed-top">
         <div class="container">
             <div class="row">
                 <div class="col d-flex align-items-center justify-content-between">
@@ -165,6 +166,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </header>
     <section class="hero-section">
         <div class="container">
@@ -336,10 +338,14 @@
                             <div>
                                 <div class="vertical-box">
                                     <p class="mb-0">
-                                        50+
+                                        <span class="shuffle">
+                                            50+
+                                        </span>
                                     </p>
                                     <p class="mb-0">
-                                        7 In-House
+                                        <span class="shuffle">
+                                            7 In-House
+                                        </span>
                                     </p>
                                 </div>
 
@@ -352,10 +358,14 @@
                             <div>
                                 <div class="vertical-box">
                                     <p class="mb-0">
-                                        4,00,000+ Annually
+                                        <span class="shuffle">
+                                            4,00,000+ Annually
+                                        </span>
                                     </p>
                                     <p class="mb-0">
-                                        2,60,000+ In-Pay
+                                        <span class="shuffle">
+                                            2,60,000+ In-Pay
+                                        </span>
                                     </p>
                                 </div>
                                 <div class="vbox-name">
@@ -367,10 +377,14 @@
                             <div>
                                 <div class="vertical-box">
                                     <p class="mb-0">
-                                        2000 Bets Per Second
+                                        <span class="shuffle">
+                                            2000 Bets Per Second
+                                        </span>
                                     </p>
                                     <p class="mb-0">
-                                        Horizontally Scallable
+                                        <span class="shuffle">
+                                            Horizontally Scallable
+                                        </span>
                                     </p>
                                 </div>
                                 <div class="vbox-name">
@@ -423,7 +437,7 @@
                 </div>
                 <div class="col-md-6 d-flex align-items-center justify-content-center">
                     <div class="video-content">
-                        <video id="introVideo" autoplay>
+                        <video id="introVideo" autoplay loop>
                             <source src="video/platform.webm" type="video/webm" />
                         </video>
                     </div>
@@ -471,7 +485,7 @@
                 </div>
                 <div class="col-md-6 d-flex align-items-center justify-content-center">
                     <div class="video-container">
-                        <video id="introVideo" autoplay>
+                        <video id="introVideo" autoplay loop>
                             <source src="video/odds-risks.webm" />
                         </video>
                     </div>
@@ -484,7 +498,7 @@
             <div class="row w-80">
                 <div class="col-md-6 d-flex align-items-center justify-content-center">
                     <div class="video-container">
-                        <video id="introVideo" autoplay>
+                        <video id="introVideo" autoplay loop>
                             <source src="video/localisation.webm" type="video/webm" />
                         </video>
                     </div>
@@ -531,10 +545,10 @@
                 </div>
                 <div class="col-12 col-md-4 text-center">
                     <div class="gaming-img up-down-animation">
-                        <img src="images/mannequin.png" alt="image">
+                        <img src="images/mannequin.png" alt="image" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-12 col-md-4 text-end">
+                <div class="col-12 col-md-4 text-end d-none d-xl-block">
                     <div class="templated-text">
                         <img src="images/templated-icon-rev.png" data-aos="fade-left" data-aos-delay="400" class="head">
                         <h2 data-aos="fade-left" data-aos-delay="600" class="blue-color"> TEMPLATED </h2>
@@ -547,7 +561,21 @@
                             Learn More
                         </a>
                     </div>
-
+                </div>
+                <div class="col-12 col-md-4 text-start d-block d-xl-none">
+                    <div class="templated-text">
+                        <img src="images/templated-icon-rev.png" data-aos="fade-left" data-aos-delay="400" class="head">
+                        <h2 data-aos="fade-left" data-aos-delay="600" class="blue-color"> TEMPLATED </h2>
+                        <h2 class="mb-0" data-aos="fade-left" data-aos-delay="800">USER INTERFACE</h2>
+                        <hr data-aos="fade-left" data-aos-delay="900">
+                        <p data-aos="fade-left" data-aos-delay="1000">
+                            <span class="blue-color">Made-to-measure,</span>
+                            modifiable solution </p>
+                        <a href="#" data-aos="fade-left" data-aos-delay="1200" class="btn-learnmore"> <img
+                                src="images/learn_icon.png" alt="icon" width="20" />
+                            Learn More
+                        </a>
+                    </div>
                 </div>
             </div>
     </section>
@@ -567,7 +595,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="video-container">
-                        <video id="introVideo" autoplay>
+                        <video id="introVideo" autoplay loop>
                             <source src="video/customui.webm" type="video/webm" />
                         </video>
                     </div>
@@ -592,8 +620,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="video-container">
-                        <video autoplay>
-                            <source src="video/templatedui.webm" type="video/webm" />
+                        <video autoplay loop>
+                            <source src="video/templatedui" type="video/webm" />
                         </video>
                     </div>
                 </div>
@@ -636,15 +664,10 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="soccer-product">
+                    <div class="product-info">
                         <div class="container">
                             <div class="row justify-content-center align-items-center">
                                 <div class="col-md-6">
-                                    <!-- <div class="video-container">
-                                        <video autoplay loop id="introVideo">
-                                            <source src="video/in-house.webm" type="video/webm" />
-                                        </video>
-                                    </div> -->
                                     <h3 data-aos="fade-right" data-aos-delay="400" style="white-space: nowrap;"> THE
                                         TIKI-TAKA OF </h3>
                                     <h2 data-aos="fade-right" data-aos-delay="600">SOCCER</h2>
@@ -655,45 +678,35 @@
                                 </div>
                                 <div class="col-md-6 d-flex justify-content-end">
                                     <div class="soccer">
-
-                                        <!-- <h3 data-aos="fade-left" data-aos-delay="400"> WE ONLY BUILD PRODUCTS IF
-                                            WE<br> CAN <span class="blue-color">BETTER</span> WHAT'S
-                                            AVAILABLE </h3>
-                                        <h3 data-aos="fade-left" data-aos-delay="600"> ALL PRODUCTS ARE OFFERED AS
-                                            <br>
-                                            <span class="blue-color">PRICE FEEDS</span><br>OR<br>
-                                            <span class="blue-color">FULLY MANAGED SERVICES</span>
-                                        </h3>
-                                        <h3 data-aos="fade-left" data-aos-delay="800"> SUPPLIED VIA APIs OR iFRAME
-                                        </h3>
-                                        <div data-aos="fade-left" data-aos-delay="1000" class="move-right">
-                                            <h3> SWIPE RIGHT TO FIND OUT ABOUT OUR IN-HOUSE PRODUCTS </h3>
-                                        </div> -->
                                         <ul>
                                             <li data-aos="fade-left" data-aos-delay="400">
                                                 <span class="bullet-icon"></span>
-                                                97%+ IN-PLAY MARKET
-                                                UPTIME
+                                                <span> 97%+ IN-PLAY MARKET
+                                                    UPTIME</span>
                                             </li>
                                             <li data-aos="fade-left" data-aos-delay="600">
                                                 <span class="bullet-icon">
-                                                </span>IN-PLAY CREATE-A-BET
+                                                </span>
+                                                <span> IN-PLAY CREATE-A-BET</span>
                                             </li>
                                             <li data-aos="fade-left" data-aos-delay="800">
-                                                <span class="bullet-icon"></span>SUPERIOR PRICING
-                                                EFFICIENCY
+                                                <span class="bullet-icon"></span>
+                                                <span>SUPERIOR PRICING
+                                                    EFFICIENCY</span>
                                             </li>
                                             <li data-aos="fade-left" data-aos-delay="1000">
-                                                <span class="bullet-icon"></span>OUTRIGHTS &amp; SPECIALS
+                                                <span class="bullet-icon"></span>
+                                                <span> OUTRIGHTS &amp; SPECIALS</span>
                                             </li>
                                             <li data-aos="fade-left" data-aos-delay="1200">
-                                                <span class="bullet-icon"></span>ROUND-THE-CLOCK PRODUCT
+                                                <span class="bullet-icon"></span>
+                                                <span> ROUND-THE-CLOCK PRODUCT</span>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="mid-video">
-                                    <video autoplay loop id="introVideo">
+                                    <video id="introVideo" autoplay loop>
                                         <source src="video/Soccer.webm" type="video/webm" />
                                     </video>
                                 </div>
@@ -702,32 +715,162 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="inhouse-products">
+                    <div class="product-info">
                         <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-md-5">
-                                    <div class="video-container">
-                                        <video autoplay loop id="introVideo">
-                                            <source src="video/in-house.webm" type="video/webm" />
-                                        </video>
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6">
+                                    <h3 data-aos="fade-right" data-aos-delay="400" style="white-space: nowrap;"> A ROBO
+                                    </h3>
+                                    <h2 data-aos="fade-right" data-aos-delay="600">RACING</h2>
+                                    <h3 data-aos="fade-right" data-aos-delay="800">PRODUCTS</h3>
+                                    <p data-aos="fade-right" data-aos-delay="1000"> Throw out the form books and dress
+                                        codes, a 21st century Racing product is finally here.
+                                    </p>
+                                </div>
+                                <div class="col-md-6 d-flex justify-content-end">
+                                    <div class="soccer">
+                                        <ul>
+                                            <li data-aos="fade-left" data-aos-delay="400">
+                                                <span class="bullet-icon"></span>
+                                                <span>CREATE-A-RACE</span>
+                                            </li>
+                                            <li data-aos="fade-left" data-aos-delay="600">
+                                                <span class="bullet-icon">
+                                                </span>
+                                                <span>
+                                                    AI SUPPORTED PRICING
+                                                </span>
+                                            </li>
+                                            <li data-aos="fade-left" data-aos-delay="800">
+                                                <span class="bullet-icon"></span>
+                                                <span>AUTOMATED DERIVATIVES</span>
+                                            </li>
+                                            <li data-aos="fade-left" data-aos-delay="1000">
+                                                <span class="bullet-icon"></span>
+                                                <span> ANTEPOST &amp; SPECIALS</span>
+                                            </li>
+                                            <li data-aos="fade-left" data-aos-delay="1200">
+                                                <span class="bullet-icon"></span>
+                                                <span> ROUND-THE-CLOCK PRODUCT</span>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="col-md-5 offset-1">
-                                    <div class="products-content">
-                                        <h3 data-aos="fade-left" data-aos-delay="400"> WE ONLY BUILD PRODUCTS IF
-                                            WE<br> CAN <span class="blue-color">BETTER</span> WHAT'S
-                                            AVAILABLE </h3>
-                                        <h3 data-aos="fade-left" data-aos-delay="600"> ALL PRODUCTS ARE OFFERED AS
-                                            <br>
-                                            <span class="blue-color">PRICE FEEDS</span><br>OR<br>
-                                            <span class="blue-color">FULLY MANAGED SERVICES</span>
+                                <div class="mid-video">
+                                    <video autoplay loop id="introVideo">
+                                        <source src="video/Racing.webm" type="video/webm" />
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-info">
+                        <div class="container">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6 d-flex justify-content-center">
+                                    <div class="w-80">
+                                        <h5 data-aos="fade-right" data-aos-delay="600">US SPORTS</h5>
+                                        <h6 data-aos="fade-right" data-aos-delay="800">SPIRIT OF 1773, CLASS OF 2022
+                                        </h6>
+                                        <p data-aos="fade-right" data-aos-delay="1000"> A US Sports betting revolution.
+                                            We've partnered with SportsIQ to build products fit for the US market.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-flex justify-content-end">
+                                    <div class="soccer">
+                                        <ul>
+                                            <li data-aos="fade-left" data-aos-delay="400">
+                                                <span class="bullet-icon"></span>
+                                                <span>FULL COMPETETION COVERAGE</span>
+                                            </li>
+                                            <li data-aos="fade-left" data-aos-delay="600">
+                                                <span class="bullet-icon">
+                                                </span>
+                                                <span>
+                                                    UNRIVALLED IN-PLAY UPTIME
+                                                </span>
+                                            </li>
+                                            <li data-aos="fade-left" data-aos-delay="800">
+                                                <span class="bullet-icon"></span>
+                                                <span>EXTENSIVE MARKET COVERAGE </span>
+                                            </li>
+                                            <li data-aos="fade-left" data-aos-delay="1000">
+                                                <span class="bullet-icon"></span>
+                                                <span>IN-PLAY PLAYER PROPS </span>
+                                            </li>
+                                            <li data-aos="fade-left" data-aos-delay="1200">
+                                                <span class="bullet-icon"></span>
+                                                <span> FUTURES & SPECIALS </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="mid-video">
+                                    <video autoplay loop id="introVideo">
+                                        <source src="video/Ussports.webm" type="video/webm" />
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-info">
+                        <div class="container">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6 d-flex justify-content-center">
+                                    <div class="w-80">
+                                        <h3 data-aos="fade-right" data-aos-delay="400" style="white-space: nowrap;"> A
+                                            Pro
                                         </h3>
-                                        <h3 data-aos="fade-left" data-aos-delay="800"> SUPPLIED VIA APIs OR iFRAME
-                                        </h3>
-                                        <div data-aos="fade-left" data-aos-delay="1000" class="move-right">
-                                            <h3> SWIPE RIGHT TO FIND OUT ABOUT OUR IN-HOUSE PRODUCTS </h3>
+                                        <h2 data-aos="fade-right" data-aos-delay="600">Golf</h2>
+                                        <h3 data-aos="fade-right" data-aos-delay="800">PRODUCT</h3>
+                                        <p data-aos="fade-right" data-aos-delay="1000">
+                                            Avoid the hazard of rough data fees with our highly-automated, feature
+                                            packed
+                                            Golf product.
+                                        </p>
+                                        <div class="looking-for">
+                                            <img src="images/sportbook-que.png" alt="image" class="img-fluid">
                                         </div>
                                     </div>
+                                </div>
+                                <div class="col-md-6 d-flex justify-content-end">
+                                    <div class="soccer">
+                                        <ul>
+                                            <li data-aos="fade-left" data-aos-delay="400">
+                                                <span class="bullet-icon"></span>
+                                                <span>Hole by hole markets</span>
+                                            </li>
+                                            <li data-aos="fade-left" data-aos-delay="600">
+                                                <span class="bullet-icon">
+                                                </span>
+                                                <span>
+                                                    72 Hole &amp; 18 hole markets
+                                                </span>
+                                            </li>
+                                            <li data-aos="fade-left" data-aos-delay="800">
+                                                <span class="bullet-icon"></span>
+                                                <span>Pda &amp; eur tour in-play</span>
+                                            </li>
+                                            <li data-aos="fade-left" data-aos-delay="1000">
+                                                <span class="bullet-icon"></span>
+                                                <span> Broad derivatives offering</span>
+                                            </li>
+                                            <li data-aos="fade-left" data-aos-delay="1200">
+                                                <span class="bullet-icon"></span>
+                                                <span> No expensive data fees</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="mid-video">
+                                    <video autoplay loop id="introVideo">
+                                        <source src="video/Golf.webm" type="video/webm" />
+                                    </video>
                                 </div>
                             </div>
                         </div>
@@ -735,41 +878,11 @@
                 </div>
             </div>
             <!-- Add pagination -->
-            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-pagination"></div> -->
             <!-- Add navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <!-- <div class="swiper-button-prev"></div> -->
+            <!-- <div class="swiper-button-next"></div> -->
         </div>
-        <!-- <div class="inhouse-products">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-5">
-                        <div class="video-container">
-                            <video autoplay loop id="introVideo">
-                                <source src="video/in-house.webm" type="video/webm" />
-                            </video>
-                        </div>
-                    </div>
-                    <div class="col-md-5 offset-1">
-                        <div class="products-content">
-                            <h3 data-aos="fade-left" data-aos-delay="400"> WE ONLY BUILD PRODUCTS IF
-                                WE<br> CAN <span class="blue-color">BETTER</span> WHAT'S
-                                AVAILABLE </h3>
-                            <h3 data-aos="fade-left" data-aos-delay="600"> ALL PRODUCTS ARE OFFERED AS
-                                <br>
-                                <span class="blue-color">PRICE FEEDS</span><br>OR<br>
-                                <span class="blue-color">FULLY MANAGED SERVICES</span>
-                            </h3>
-                            <h3 data-aos="fade-left" data-aos-delay="800"> SUPPLIED VIA APIs OR iFRAME
-                            </h3>
-                            <div data-aos="fade-left" data-aos-delay="1000" class="move-right">
-                                <h3> SWIPE RIGHT TO FIND OUT ABOUT OUR IN-HOUSE PRODUCTS </h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </section>
     <section class="news-slider">
         <div class="container">
@@ -955,36 +1068,6 @@
     </script>
 
     <script>
-        //         let sentences = ["Sentence 1", "Sentence 2", "Sentence 3"];
-        // let currentSentence = 0;
-        // let animationSpeed = 2000; // milliseconds
-        // let element = document.querySelector(".animated-sentence");
-
-        // function animateSentence() {
-        //   element.innerHTML = sentences[currentSentence];
-        //   currentSentence = (currentSentence + 1) % sentences.length;
-        //   element.classList.add("animated");
-        //   setTimeout(function() {
-        //     element.classList.remove("animated");
-        //   }, animationSpeed);
-        // }
-
-        // setInterval(animateSentence, animationSpeed);
-        const textEl = document.getElementById('change-text');
-        let textIndex = 0;
-        const texts = ['Text 1', 'Text 2', 'Text 3'];
-
-        function updateText() {
-            textEl.style.opacity = 0;
-            setTimeout(() => {
-                textEl.innerHTML = texts[textIndex];
-                textEl.style.opacity = 1;
-            }, 500);
-            textIndex = (textIndex + 1) % texts.length;
-        }
-
-        setInterval(updateText, 3000);
-
     </script>
 </body>
 
