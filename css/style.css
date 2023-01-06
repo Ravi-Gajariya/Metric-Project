@@ -11,8 +11,181 @@ body {
 }
 
 .blue-color {
-    color: #00adf0;
+    color: #00adf0 !important;
 }
+
+/* CONTACT-US FORM CSS START */
+.section-heading  {
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 3%;
+}
+
+.section-heading  h1{
+    font-size: 8vw;
+    font-weight: 700;
+    color: rgba(6,39,57,.5);
+    z-index: 0;
+    width: 100%;
+}
+.form-container {
+    background-color: #00111b;
+}
+
+.form-container .modal-header {
+    border-bottom: 0;
+    /* padding: 0; */
+}
+
+.form-container .btn-close:focus {
+    box-shadow: none;
+}
+
+.form-container .modal-header .btn-close {
+    filter: invert(1);
+    opacity: 1;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    z-index: 1;
+}
+
+.form-container .modal-body {
+    display: grid;
+    place-content: center;
+    position: relative;
+    /* color: #fff; */
+}
+
+.form-container .title h2 {
+    text-transform: capitalize;
+    font-size: 30px;
+    margin: 16px 0;
+    line-height: 44px;
+    font-weight: 600;
+}
+
+.form-container .content p {
+    font-size: 1rem;
+    width: 69%;
+}
+
+.form-fields .form-control {
+    font-family: inherit;
+    display: block;
+    width: 100%;
+    border: 1px solid;
+    border-color: #00aeefbd;
+    background: #08121c;
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: .75rem;
+    color: #fff;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-fields label {
+    color: #fff;
+    opacity: 0.5;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #00aeef;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.form-container .btn-submit {
+    border: none;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: none;
+    border-radius: 0;
+    background: #00adf0;
+    font-size: 13px;
+    padding: .75rem 2rem;
+    margin-top: 24px;
+    display: inline-block;
+    margin-left: auto;
+    float: right;
+}
+
+.fade {
+    transition: opacity .20s linear;
+}
+
+/* CONTACT-US FORM CSS END */
+
+/* PROGRESSBAR CSS START */
+.v-progressbar {
+    position: fixed;
+    right: 5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+.v-progressbar ul li {
+    width: 5px;
+    height: 40px;
+    background-color: #00aeef40;
+    list-style-type: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.v-progressbar ul li:first-child,
+.v-progressbar ul li:last-child {
+    /* display: none; */
+    opacity: 0;
+}
+
+/* .back_color {
+    background: #00aeef !important;
+} */
+
+.v-progressbar ul li a {
+    text-decoration: none;
+    /* margin-left: 10px; */
+    color: #00aeef !important;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.v-progressbar span {
+    opacity: 0;
+    margin-left: 10px;
+    color: #00aeef;
+    font-size: 10px;
+    display: inline-block;
+    transition: all 0.1s ease;
+}
+
+.v-progressbar .active a {
+    height: 100%;
+    width: 4px;
+    background-color: #00aeef !important;
+    color: #00aeef !important;
+}
+
+.v-progressbar .active span {
+    opacity: 1;
+}
+
+/* PROGRESSBAR CSS END */
 
 .contact-us {
     width: 4rem;
@@ -27,6 +200,12 @@ body {
 
 .contact-us svg {
     width: 4rem;
+}
+
+.header .fixed-top {
+    background-color: #06101b;
+    padding: 0.6rem 0;
+    box-shadow: 0 0.2rem 1rem 0.1rem rgb(6 16 27 / 22%);
 }
 
 .header .logo {
@@ -257,6 +436,17 @@ body {
     position: relative;
 }
 
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: -300px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    height: 236px;
+    box-shadow: 0 100px 333px 170px #131e2a;
+}
+
 
 .hero-section .video-wrap {
     position: absolute;
@@ -419,24 +609,6 @@ showText.show {
     transform: translateX(-50%);
 }
 
-.user-interface h2,
-.user-interface h4,
-.user-interface p,
-.customised-ui h2,
-.customised-ui h4,
-.customised-ui p {
-    color: #fff;
-}
-
-.custom-ui h2,
-.custom-ui h4 {
-    color: #fff;
-}
-
-.template-ui h2,
-.template-ui h4 {
-    color: #fff;
-}
 
 /* SPORTSBOOK CSS START */
 
@@ -445,8 +617,8 @@ showText.show {
     width: 100%;
     background: url('../images/sportsbook-bg.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -456,6 +628,17 @@ showText.show {
 .sportsbook h2,
 .sportsbook p {
     color: #fff;
+}
+
+.sportsbook h2 {
+    font-size: 34px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.sportsbook p {
+    font-size: 19px;
+    margin: 0;
 }
 
 /* .sportbook-content {
@@ -486,8 +669,8 @@ showText.show {
     position: relative;
     background: url('../images/gradient-bg.png');
     height: 500px;
-    background-size: contain;
-    background-position: 100% 100%;
+    background-size: 100% 100%;
+    /* background-position: 100% 100%; */
     background-repeat: no-repeat;
     /* width: auto; */
 }
@@ -578,6 +761,34 @@ showText.show {
     position: relative;
     width: 100%;
     padding: 0 40px;
+}
+
+.news-slider .swiper-button-prev::after,
+.logo-slider .swiper-button-prev::after {
+    position: absolute;
+    left: -14px;
+    font-size: 0;
+    background: url('../images/arrow-left.png') !important;
+    height: 30px;
+    width: 30px;
+    background-size: cover !important;
+}
+
+.news-slider .swiper-button-next::after,
+.logo-slider .swiper-button-next::after {
+    position: absolute;
+    left: auto;
+    font-size: 0;
+    background: url('../images/arrow_right.png') !important;
+    height: 30px;
+    width: 30px;
+    background-size: cover !important;
+    right: -14px;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    opacity: 1;
 }
 
 /* NEWS SLIDER END */
@@ -860,9 +1071,10 @@ showText.show {
 }
 
 .tenant-text h3 {
-    font-size: 26px;
+    font-size: 24px;
     color: #fff;
     font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 .video-container video {
@@ -884,8 +1096,9 @@ showText.show {
 
 .risk-content h3 {
     color: #fff;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 /* CUSTOM-RISKS CSS END */
@@ -936,6 +1149,25 @@ showText.show {
     display: inline-block;
 }
 
+.user-interface h2,
+.user-interface h4,
+.user-interface p,
+.customised-ui h2,
+.customised-ui h4,
+.customised-ui p {
+    color: #fff;
+}
+
+.custom-ui h2,
+.custom-ui h4 {
+    color: #fff;
+}
+
+.template-ui h2,
+.template-ui h4 {
+    color: #fff;
+}
+
 /* USER-INTERFACE CSS END */
 /* CUSTOMISED-UI CSS START */
 
@@ -946,19 +1178,34 @@ showText.show {
     justify-content: center;
 }
 
+.customised-ui h2 {
+    font-size: 30px;
+    margin: 16px 0;
+    font-weight: 700;
+}
+
+.customised-ui h4 {
+    font-size: 22px;
+    margin: 16px 0;
+    font-weight: 700;
+}
+
 /* CUSTOMISED-UI CSS END */
 /* TEMPLATE-UI CSS START */
 
 .template-ui {
     height: 100vh;
-    display: grid;
-    place-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .template-ui h3 {
     color: #fff;
     font-size: 22px;
     font-weight: 700;
+    margin: 16px 0;
+    line-height: 33px;
 }
 
 /* TEMPLATE-UI CSS END */
@@ -999,6 +1246,7 @@ showText.show {
     line-height: 48px;
     font-weight: 700;
     color: #1f345d;
+    text-transform: uppercase;
 }
 
 .product-info h2 {
@@ -1006,8 +1254,8 @@ showText.show {
     color: #00adf0;
     font-size: 105px;
     line-height: 96px;
-    letter-spacing: -4px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .product-info h5 {
@@ -1133,6 +1381,11 @@ showText.show {
     color: #a79f9f;
     font-size: 11px;
     text-decoration: none;
+    transition: color .3s ease-in-out;
+}
+
+.footer ul li a:hover {
+    color: #fff;
 }
 
 .footer h4 {
@@ -1142,6 +1395,10 @@ showText.show {
 
 .footer p {
     color: #a79f9f;
+}
+
+.footer ul {
+    padding-left: 0;
 }
 
 .fade-in-out {
@@ -1235,6 +1492,10 @@ showText.show {
         /* background: none; */
     }
 
+    .vertical-box {
+        height: 380px;
+    }
+
     .vertical-box p {
         font-size: 19px;
     }
@@ -1273,9 +1534,7 @@ showText.show {
         font-size: 17px;
     }
 
-    .sportbook-content {
-
-    }
+    .sportbook-content {}
 
     .services {
         height: auto;
@@ -1293,6 +1552,10 @@ showText.show {
 
 @media only screen and (max-width: 480px) {
 
+    .menu-overlay {
+        padding: 56px 0 0 10px;
+    }
+
     .down-gif {
         display: none;
     }
@@ -1306,7 +1569,6 @@ showText.show {
     }
 
     .menu-button-bar {
-        height: 1px;
         width: 26px;
     }
 
@@ -1333,7 +1595,8 @@ showText.show {
     }
 
     .services .left-side {
-        height: 72vh;
+        height: auto;
+        padding: 4rem 1rem;
     }
 
     .left-side p {
@@ -1368,10 +1631,10 @@ showText.show {
     }
 
     .services .right-side {
-        height: 80vh;
-        display: block;
-        padding-top: 1rem;
+        height: auto;
+        padding: 4rem 1rem;
     }
+
     .right-side p {
         font-size: 12px;
         line-height: 30px;
@@ -1380,6 +1643,7 @@ showText.show {
     .right-side h3 {
         font-size: 20px;
     }
+
     .right-side h4 {
         font-size: 13px;
         margin: 0.5rem 0 1.5rem 0;
@@ -1393,7 +1657,7 @@ showText.show {
         height: auto;
         width: 80px;
     }
-    
+
     .sportbook-content {
         height: 300px;
     }
@@ -1417,7 +1681,13 @@ showText.show {
     }
 
     .sportsbook {
-        height: 75vh;
+        height: auto;
+        padding: 4rem 1rem;
+    }
+
+    .sportsbook .w-90 {
+        width: 90%;
+        margin: 0 auto;
     }
 
     .multi-tenant-platform {
@@ -1425,7 +1695,7 @@ showText.show {
     }
 
     .tenant-text h3 {
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 1rem;
     }
 
@@ -1434,17 +1704,15 @@ showText.show {
         max-width: 100%;
     }
 
-    .risk-content h3 {
-        font-size: 18px;
-        margin-bottom: 1rem;
-    }
-
+    .risk-content h3,
     .localisation-text h3 {
-        font-size: 18px;
+        font-size: 16px;
+        margin-bottom: 1rem;
     }
 
     .user-interface {
         height: auto;
+        padding: 2rem 1rem;
     }
 
     .user-interface .gaming-img {
@@ -1455,21 +1723,208 @@ showText.show {
         height: 300px;
     }
 
+    .user-interface h2 {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .interface-text,
+    .templated-text {
+        width: 80%;
+        margin-left: auto;
+        text-align: left;
+    }
+
     .right-side .btn-cta {
         font-size: 12px;
     }
+
+    .user-interface .btn-learnmore {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        grid-gap: 8px;
+        gap: 8px;
+    }
+
+    .btn-learnmore img {
+        width: 15px;
+    }
+
+    .customised-ui {
+        height: auto;
+        padding: 3rem 1rem;
+    }
+
+    .customised-ui .w-80 {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .customised-ui img {
+        height: 80px;
+        width: 200px;
+    }
+
+    .customised-ui h2 {
+        font-size: 16px;
+        margin: 16px 0;
+    }
+
+    .customised-ui h4 {
+        font-size: 12px;
+        margin: 16px 0;
+    }
+
+    .template-ui {
+        height: auto;
+        padding: 3rem 0;
+    }
+
+    .template-ui .w-80 {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .template-ui h3 {
+        font-size: 14px;
+        margin: 8px 0;
+    }
+
+    /* .inhouse-products {
+        height: auto;
+    } */
+
+    .products-content h3 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+
+    .inhouse-products .offset-1 {
+        width: 80%;
+        margin: 0 auto !important;
+    }
+
+    .product-info {
+        background: url('../images/products-soccer-bgm..jpg');
+        background-size: cover;
+    }
+
+    .product-info h3 {
+        font-size: 24px;
+        line-height: 48px;
+    }
+
+    .product-info h2 {
+        font-size: 56px;
+        line-height: 34px;
+    }
+
+    .product-info p {
+        width: 90%;
+        font-size: 14px;
+        line-height: 21px;
+        margin: 8px 0 0;
+    }
+
+    .mid-video {
+        position: static;
+        transform: none;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .mid-video video {
+        width: 160px;
+    }
+
+    .soccer ul li {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .product-info .w-90 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .soccer ul {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .bullet-icon {
+        background-size: 24px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .looking-for img {
+        width: 116px;
+    }
+
+    .product-info h5 {
+        font-size: 44px;
+        line-height: 58px;
+    }
+
+    .product-info .w-80 {
+        width: 100%;
+    }
+
+    /* .mb-text p {
+        font-size: 18px;
+        line-height: 26px;
+    } */
+
+    .mb-text h6 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .mb-text p {
+        width: 100%;
+        font-size: 14px;
+        line-height: 21px;
+        margin: 8px 0 0;
+    }
+
+    .news-slider .swiper-button-next::after {
+        left: 0;
+        right: auto;
+    }
+
+    .news-slider .swiper-button-next::after {
+        left: auto;
+        right: 0;
+    }
+
+    .news-slider {
+        height: 600px;
+    }
+
+    .logo-slider {
+        height: 800px;
+    }
+
 }
 
 @media screen and (max-width: 320px) {
-    .services .left-side {
-        height: 80vh;
+
+    .menu-overlay {
+        padding: 56px 0 0 0px;
+    }
+
+    .menu-button {
+        left: 65%;
     }
 
     .service-content img {
         width: 40px;
     }
 
-    .image-content .service-content > div {
+    .image-content .service-content>div {
         display: flex;
         justify-content: flex-start !important;
         margin: 0.5rem 0;
@@ -1479,7 +1934,21 @@ showText.show {
         font-size: 12px;
     }
 
-    .services .right-side {
-        height: 60vh;
+
+    .tenant-text h3,
+    .risk-content h3,
+    .localisation-text h3 {
+        font-size: 14px;
     }
+
+    .news-slider .swiper-button-next::after {
+        left: 0;
+        right: auto;
+    }
+
+    .news-slider .swiper-button-next::after {
+        left: auto;
+        right: 0;
+    }
+
 }

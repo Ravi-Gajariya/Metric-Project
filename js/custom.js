@@ -1,3 +1,14 @@
+var housingswiper = new Swiper('.swiper-content', {
+  loop: false,
+  // pagination: {
+  //   el: '.swiper-pagination',
+  // },
+  // navigation: {
+  //   nextEl: '.swiper-button-next',
+  //   prevEl: '.swiper-button-prev',
+  // },
+});
+
 var swiper = new Swiper(".news-carousel", {
   slidesPerView: 1,
   spaceBetween: 10,
@@ -27,8 +38,9 @@ var swiper = new Swiper(".news-carousel", {
   },
 });
 
-var mySwiper = new Swiper('.swiper-container', {
-    slidesPerView: 4,
+var logoSwiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    autoplay: true,
     loop: true,
     centeredSlides: true,
     effect: 'coverflow',
@@ -39,15 +51,15 @@ var mySwiper = new Swiper('.swiper-container', {
       modifier: 1,
       slideShadows : false,
     },
-    navigation: {
-      prevEl: ".swiper-button-prev",
-      nextEl: ".swiper-button-next"
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      type: 'bullets',
-      clickable: true
-    },
+    // navigation: {
+    //   prevEl: ".swiper-button-prev",
+    //   nextEl: ".swiper-button-next"
+    // },
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   type: 'bullets',
+    //   clickable: true
+    // },
     breakpoints: {
       1024: {
         slidesPerView: 4,
@@ -81,16 +93,9 @@ menuButton.addEventListener('click', function() {
     // backgroundOverlay.classList.toggle('bg-overlay');
 });
 
-// jQuery(document).on('scroll', function(){
-//   jQuery('h1').css("left", Math.max(100 - 0.2*window.scrollY, 1) + "vw");
-//   });
-// var video = document.getElementById("introVideo");
-//  video.addEventListener('ended', function(e) {
-//   console.log('show');
-//  });
 
 let textElement = document.querySelector("#Hero-Content");
-let delay = 4500; // milliseconds
+let delay = 5500; // milliseconds
 
 textElement.style.display = "none"; // hide the text initially
 
@@ -100,33 +105,49 @@ function showText() {
 
 setTimeout(showText, delay); // show the text after the delay
 
-const textEl = document.getElementById( 'change-text' );
-    let textIndex = 0;
-    const texts = [ 'Text 1', 'Text 2', 'Text 3' ];
 
-    function updateText ()
-    {
-        textEl.style.opacity = 0;
-        setTimeout( () =>
-        {
-            textEl.innerHTML = texts[ textIndex ];
-            textEl.style.opacity = 1;
-        }, 500 );
-        textIndex = ( textIndex + 1 ) % texts.length;
-    }
 
-    setInterval( updateText, 3000 );
 
-    var swiper = new Swiper('.swiper-content', {
-      // options here
-      pagination: {
-        el: '.swiper-pagination',
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+
+    window.onload = function () {
+      var video = document.getElementById('introVideo');
+      video.play();
+  }
+
+  AOS.init();
+
+
+  $( document ).ready( function ()
+{ // ranger
+  let sections = document.querySelectorAll( "section" );
+  let rangeli = document.querySelectorAll( "#Vertical-Progressbar ul li" );
+
+  window.addEventListener( 'scroll', () =>
+  {
+      //ranger on scroll
+      let current = '';
+      sections.forEach( section =>
+      {
+          let section_top = section.offsetTop;
+          let section_height = section.clientHeight;
+
+          if ( pageYOffset >= section_top )
+          {
+              current = section.getAttribute( 'id' );
+
+          }
+      } );
+
+      rangeli.forEach( li =>
+      {
+          li.classList.remove( 'active' );
+          if ( li.classList.contains( current ) )
+          {
+              li.classList.add( 'active' );
+          }
+      } );
     });
-
+  });
+  
     
 
