@@ -118,13 +118,13 @@ setTimeout(showText, delay); // show the text after the delay
 
 
   $( document ).ready( function ()
-{ // ranger
+{ // progress
   let sections = document.querySelectorAll( "section" );
-  let rangeli = document.querySelectorAll( "#Vertical-Progressbar ul li" );
+  let verticalProgress = document.querySelectorAll( "#Vertical-Progressbar ul li" );
 
   window.addEventListener( 'scroll', () =>
   {
-      //ranger on scroll
+      //progress on scroll
       let current = '';
       sections.forEach( section =>
       {
@@ -138,7 +138,7 @@ setTimeout(showText, delay); // show the text after the delay
           }
       } );
 
-      rangeli.forEach( li =>
+      verticalProgress.forEach( li =>
       {
           li.classList.remove( 'active' );
           if ( li.classList.contains( current ) )
